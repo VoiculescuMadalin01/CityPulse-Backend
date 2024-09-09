@@ -1,0 +1,253 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+    provider = "prisma-client-js"
+}
+
+datasource db {
+    provider  = "postgresql"
+    url       = env("DATABASE_URL")
+    directUrl = env("DIRECT_URL")
+}
+
+// Prisma schema for your database
+
+// Enum definitions
+enum Role {
+    GUEST
+    USER
+    ORGANIZER
+    MODERATOR
+    ADMIN
+    SUPER_ADMIN
+}
+
+// Models
+model User {
+    uuid             String    @id @unique @default(uuid())
+    role             Role      @default(USER)
+    email            String    @unique
+    firstName        String
+    lastName         String
+    password         String
+    emailConfirmedAt DateTime?
+    lastSignInAt     DateTime?
+    rawAppMetaData   Json?
+    rawUserMetaData  Json?
+    createdAt        DateTime  @default(now())
+    updatedAt        DateTime  @updatedAt
+    phone            String?   @unique
+    phoneConfirmedAt DateTime?
+    bannedUntil      DateTime?
+    isSsoUser        Boolean   @default(false)
+    deletedAt        DateTime?
+
+    // Relations
+    locations         Location[]
+    supportTickets    SupportTicket[]
+    likedLocations    UserLikes[]
+    dislikedLocations UserDislikes[]
+    userMetadata      UserMetadata?   @relation
+    Event             Event[]
+}
+
+model UserMetadata {
+    uuid       String   @id @unique @default(uuid())
+    user_uuid  String   @unique
+    interested String[]
+    attended   String[]
+
+    user User @relation(fields: [user_uuid], references: [uuid])
+}
+
+model Location {
+    uuid              String   @id @unique @default(uuid())
+    name              String
+    description       String
+    website           String?
+    user_uuid         String
+    address           String
+    latitude          String
+    longitude         String
+    presentationImage String?
+    locationImages    String[]
+    cityId            String?
+    stateId           String?
+    countryId         String?
+    total_likes       Int      @default(0)
+    total_dislike     Int      @default(0)
+    createdAt         DateTime @default(now())
+    updatedAt         DateTime @updatedAt
+
+    // Relations
+    user           User            @relation(fields: [user_uuid], references: [uuid], onDelete: Cascade, onUpdate: Cascade)
+    cityRef        City?           @relation(fields: [cityId], references: [uuid], onDelete: Restrict, onUpdate: Cascade)
+    stateRef       States?         @relation(fields: [stateId], references: [uuid], onDelete: Restrict, onUpdate: Cascade)
+    countryRef     Country?        @relation(fields: [countryId], references: [uuid], onDelete: Restrict, onUpdate: Cascade)
+    events         Event[]
+    supportTickets SupportTicket[]
+    likedBy        UserLikes[]
+    dislikedBy     UserDislikes[]
+}
+
+model UserLikes {
+    user_uuid     String
+    location_uuid String
+    createdAt     DateTime @default(now()) // Renamed to `createdAt` for consistency
+    user          User     @relation(fields: [user_uuid], references: [uuid])
+    location      Location @relation(fields: [location_uuid], references: [uuid])
+
+    @@id([user_uuid, location_uuid])
+}
+
+model UserDislikes {
+    user_uuid     String
+    location_uuid String
+    createdAt     DateTime @default(now()) // Renamed to `createdAt` for consistency
+    user          User     @relation(fields: [user_uuid], references: [uuid])
+    location      Location @relation(fields: [location_uuid], references: [uuid])
+
+    @@id([user_uuid, location_uuid])
+}
+
+model City {
+    uuid        String  @id @unique @default(uuid())
+    name        String
+    stateId     String
+    stateCode   String
+    stateName   String
+    countryId   String
+    countryCode String
+    countryName String
+    latitude    Float?
+    longitude   Float?
+    wikiDataId  String? // Optional field for WikiData ID
+
+    state    States     @relation(fields: [stateId], references: [uuid], onDelete: Cascade, onUpdate: Cascade)
+    Location Location[]
+}
+
+model States {
+    uuid        String  @id @unique @default(uuid())
+    name        String
+    countryId   String
+    countryCode String
+    countryName String
+    stateCode   String?
+    type        String? // Optional field for additional types
+    latitude    Float?
+    longitude   Float?
+
+    country  Country    @relation(fields: [countryId], references: [uuid], onDelete: Cascade, onUpdate: Cascade)
+    cities   City[]
+    Location Location[]
+}
+
+model Country {
+    uuid           String @id @unique @default(uuid())
+    name           String
+    iso3           String @unique
+    iso2           String @unique
+    numericCode    String @unique
+    phoneCode      String
+    capital        String
+    currency       String
+    currencyName   String
+    currencySymbol String
+    tld            String
+    native         String
+    region         String
+    regionId       String
+    subregion      String
+    subregionId    String
+    nationality    String
+    timezones      Json?
+    translations   Json?
+    latitude       Float
+    longitude      Float
+    emoji          String
+    emojiU         String
+
+    states   States[]
+    Location Location[]
+}
+
+model SupportTicket {
+    uuid          String    @id @unique @default(uuid())
+    user_uuid     String
+    location_uuid String? // nullable
+    event_uuid    String? // nullable
+    title         String
+    description   String
+    status        String
+    priority      String
+    createdAt     DateTime  @default(now())
+    updatedAt     DateTime  @updatedAt
+    completedAt   DateTime?
+
+    // Relations
+    user     User      @relation(fields: [user_uuid], references: [uuid])
+    location Location? @relation(fields: [location_uuid], references: [uuid])
+    event    Event?    @relation(fields: [event_uuid], references: [uuid])
+}
+
+model Event {
+    uuid              String   @id @unique @default(uuid())
+    location_uuid     String
+    title             String
+    description       String
+    presentationImage String?
+    eventImages       String[]
+    startAt           DateTime
+    endAt             DateTime
+    organizer_uuid    String
+    isEnable          Boolean
+    priceValue        Int
+    favouritesNumber  Int      @default(0)
+    createdAt         DateTime @default(now())
+    updatedAt         DateTime @updatedAt
+
+    // Relations
+    location       Location        @relation(fields: [location_uuid], references: [uuid])
+    user           User            @relation(fields: [organizer_uuid], references: [uuid])
+    supportTickets SupportTicket[]
+    categories     Category[]
+    facilities     Facility[]
+}
+
+model Facility {
+    uuid     String  @id @unique @default(uuid())
+    name     String  @unique
+    icon     String?
+    isEnable Boolean @default(true)
+
+    // Relations
+    events Event[]
+}
+
+model SubCategory {
+    uuid        String  @id @unique @default(uuid())
+    name        String  @unique
+    description String?
+    isEnable    Boolean @default(true)
+
+    // Relations
+    categoryUuid String
+    category     Category? @relation(fields: [categoryUuid], references: [uuid], onDelete: Cascade, onUpdate: Cascade)
+}
+
+model Category {
+    uuid        String  @id @unique @default(uuid())
+    name        String  @unique
+    description String?
+    isEnable    Boolean @default(true)
+
+    // Relations
+    subCategories SubCategory[]
+    Event         Event?        @relation(fields: [eventUuid], references: [uuid])
+    eventUuid     String?
+}

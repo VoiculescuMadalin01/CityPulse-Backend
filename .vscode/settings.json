@@ -1,0 +1,37 @@
+{
+    "workbench.colorCustomizations": {
+        "titleBar.activeBackground": "#8e44ad", // Violet vibrant
+        "titleBar.inactiveBackground": "#7d3c98", // Violet închis
+        "titleBar.activeForeground": "#ffffff", // Alb
+        "titleBar.inactiveForeground": "#ffffff", // Alb
+        "activityBar.background": "#8e44ad", // Violet vibrant
+        "activityBar.foreground": "#ffffff", // Alb
+        "activityBar.inactiveForeground": "#dcdde1", // Gri deschis
+        "activityBar.activeBorder": "#9b59b6", // Violet deschis
+        "activityBarBadge.background": "#7d3c98", // Violet închis
+        "activityBarBadge.foreground": "#ffffff", // Alb
+        "icon.foreground": "#ffffff" // Violet vibrant
+    },
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnPaste": true, // required
+    "editor.formatOnType": false, // required
+    "editor.formatOnSave": true, // optional
+    "editor.formatOnSaveMode": "file", // required to format on save
+    "files.autoSave": "onFocusChange", // optional but recommended
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": "always"
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "eslint.format.enable": true,
+    "eslint.validate": ["javascript", "typescript"],
+    "eslint.options": {
+        "extensions": [".js", ".jsx", ".ts", ".tsx"]
+    },
+    "eslint.workingDirectories": [
+        {
+            "mode": "auto"
+        }
+    ]
+}

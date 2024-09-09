@@ -1,0 +1,175 @@
+uuid,name,countryId,countryCode,countryName,stateCode,type,latitude,longitude
+4724,Alba,181,RO,Romania,AB,,44.7009153,8.0356911
+4739,Arad County,181,RO,Romania,AR,,46.2283651,21.6597819
+4722,Arges,181,RO,Romania,AG,,45.0722527,24.8142726
+4744,Bacău County,181,RO,Romania,BC,,46.3258184,26.662378
+4723,Bihor County,181,RO,Romania,BH,,47.0157516,22.172266
+4733,Bistrița-Năsăud County,181,RO,Romania,BN,,47.2486107,24.5322814
+4740,Botoșani County,181,RO,Romania,BT,,47.8924042,26.7591781
+4736,Braila,181,RO,Romania,BR,,45.2652463,27.9594714
+4759,Brașov County,181,RO,Romania,BV,,45.7781844,25.22258
+4730,Bucharest,181,RO,Romania,B,,44.4267674,26.1025384
+4756,Buzău County,181,RO,Romania,BZ,,45.3350912,26.7107578
+4732,Călărași County,181,RO,Romania,CL,,44.3658715,26.7548607
+4753,Caraș-Severin County,181,RO,Romania,CS,,45.1139646,22.0740993
+4734,Cluj County,181,RO,Romania,CJ,,46.7941797,23.6121492
+4737,Constanța County,181,RO,Romania,CT,,44.212987,28.2550055
+4754,Covasna County,181,RO,Romania,CV,,45.9426347,25.8918984
+4745,Dâmbovița County,181,RO,Romania,DB,,44.9289893,25.425385
+4742,Dolj County,181,RO,Romania,DJ,,44.1623022,23.6325054
+4747,Galați County,181,RO,Romania,GL,,45.7800569,27.8251576
+4726,Giurgiu County,181,RO,Romania,GR,,43.9037076,25.9699265
+4750,Gorj County,181,RO,Romania,GJ,,44.9485595,23.2427079
+4749,Harghita County,181,RO,Romania,HR,,46.4928507,25.6456696
+4721,Hunedoara County,181,RO,Romania,HD,,45.793638,22.9975993
+4743,Ialomița County,181,RO,Romania,IL,,44.603133,27.3789914
+4735,Iași County,181,RO,Romania,IS,,47.2679653,27.2185662
+4725,Ilfov County,181,RO,Romania,IF,,44.535548,26.2324886
+4760,Maramureș County,181,RO,Romania,MM,,46.5569904,24.6723215
+4751,Mehedinți County,181,RO,Romania,MH,,44.5515053,22.9044157
+4915,Mureș County,181,RO,Romania,MS,,46.5569904,24.6723215
+4731,Neamț County,181,RO,Romania,NT,,46.9758685,26.3818764
+4738,Olt County,181,RO,Romania,OT,,44.200797,24.5022981
+4729,Prahova County,181,RO,Romania,PH,,45.0891906,26.0829313
+4741,Sălaj County,181,RO,Romania,SJ,,47.2090813,23.2121901
+4746,Satu Mare County,181,RO,Romania,SM,,47.7668905,22.9241377
+4755,Sibiu County,181,RO,Romania,SB,,45.9269106,24.2254807
+4720,Suceava County,181,RO,Romania,SV,,47.5505548,25.741062
+4728,Teleorman County,181,RO,Romania,TR,,44.0160491,25.2986628
+4748,Timiș County,181,RO,Romania,TM,,45.8138902,21.3331055
+4727,Tulcea County,181,RO,Romania,TL,,45.0450565,29.0324912
+4757,Vâlcea County,181,RO,Romania,VL,,45.0798051,24.0835283
+4752,Vaslui County,181,RO,Romania,VS,,46.4631059,27.7398031
+4758,Vrancea County,181,RO,Romania,VN,,45.8134876,27.0657531
+4689,Autonomous Republic of Crimea,230,UA,Ukraine,43,republic,44.952117,34.102417
+4680,Cherkaska oblast,230,UA,Ukraine,71,region,49.444433,32.059767
+4692,Chernihivska oblast,230,UA,Ukraine,74,region,51.4982,31.2893499
+4678,Chernivetska oblast,230,UA,Ukraine,77,region,48.291683,25.935217
+4675,Dnipropetrovska oblast,230,UA,Ukraine,12,region,48.464717,35.046183
+4691,Donetska oblast,230,UA,Ukraine,14,region,48.015883,37.80285
+4682,Ivano-Frankivska oblast,230,UA,Ukraine,26,region,48.922633,24.711117
+4686,Kharkivska oblast,230,UA,Ukraine,63,region,49.9935,36.230383
+4684,Khersonska oblast,230,UA,Ukraine,65,region,46.635417,32.616867
+4681,Khmelnytska oblast,230,UA,Ukraine,68,region,49.422983,26.9871331
+4677,Kirovohradska oblast,230,UA,Ukraine,35,region,48.507933,32.262317
+4676,Kyiv,230,UA,Ukraine,30,city,50.4501,30.5234
+4671,Kyivska oblast,230,UA,Ukraine,32,region,50.0529506,30.7667134
+4673,Luhanska oblast,230,UA,Ukraine,9,region,48.574041,39.307815
+4672,Lvivska oblast,230,UA,Ukraine,46,region,49.839683,24.029717
+4679,Mykolaivska oblast,230,UA,Ukraine,48,region,46.975033,31.9945829
+4688,Odeska oblast,230,UA,Ukraine,51,region,46.484583,30.7326
+5071,Poltavska oblast,230,UA,Ukraine,53,region,49.6429196,32.6675339
+4683,Rivnenska oblast,230,UA,Ukraine,56,region,50.6199,26.251617
+1912,Sevastopol,230,UA,Ukraine,40,,44.61665,33.5253671
+4685,Sumska oblast,230,UA,Ukraine,59,region,50.9077,34.7981
+4674,Ternopilska oblast,230,UA,Ukraine,61,region,49.553517,25.594767
+4669,Vinnytska oblast,230,UA,Ukraine,5,region,49.233083,28.4682169
+4690,Volynska oblast,230,UA,Ukraine,7,region,50.747233,25.325383
+4670,Zakarpatska Oblast,230,UA,Ukraine,21,region,48.6208,22.287883
+4687,Zaporizka oblast,230,UA,Ukraine,23,region,47.8388,35.139567
+4668,Zhytomyrska oblast,230,UA,Ukraine,18,region,50.25465,28.6586669
+4368,Anenii Noi District,144,MD,Moldova,AN,,46.8795663,29.2312175
+4393,Bălți Municipality,144,MD,Moldova,BA,,47.7539947,27.9184148
+4379,Basarabeasca District,144,MD,Moldova,BS,,46.423706,28.8935492
+4362,Bender Municipality,144,MD,Moldova,BD,,46.8227551,29.4620101
+4375,Briceni District,144,MD,Moldova,BR,,48.3632022,27.0750398
+4391,Cahul District,144,MD,Moldova,CA,,45.8939404,28.1890275
+4366,Călărași District,144,MD,Moldova,CL,,47.286946,28.274531
+4380,Cantemir District,144,MD,Moldova,CT,,46.2771742,28.2009653
+4365,Căușeni District,144,MD,Moldova,CS,,46.6554715,29.4091222
+4373,Chișinău Municipality,144,MD,Moldova,CU,,47.0104529,28.8638102
+4360,Cimișlia District,144,MD,Moldova,CM,,46.5250851,28.7721835
+4390,Criuleni District,144,MD,Moldova,CR,,47.2136114,29.1557519
+4384,Dondușeni District,144,MD,Moldova,DO,,48.2338305,27.5998087
+4392,Drochia District,144,MD,Moldova,DR,,48.0797788,27.8604114
+4383,Dubăsari District,144,MD,Moldova,DU,,47.2643942,29.1550348
+4387,Edineț District,144,MD,Moldova,ED,,48.1678991,27.2936143
+4381,Fălești District,144,MD,Moldova,FA,,47.5647725,27.7265593
+4370,Florești District,144,MD,Moldova,FL,,47.8667849,28.3391864
+4385,Gagauzia,144,MD,Moldova,GA,,46.0979435,28.6384645
+4367,Glodeni District,144,MD,Moldova,GL,,47.7790156,27.516801
+4382,Hîncești District,144,MD,Moldova,HI,,46.8281147,28.5850889
+4369,Ialoveni District,144,MD,Moldova,IA,,46.863086,28.8234218
+4363,Nisporeni District,144,MD,Moldova,NI,,47.0751349,28.1768155
+4389,Ocnița District,144,MD,Moldova,OC,,48.4110435,27.4768092
+4361,Orhei District,144,MD,Moldova,OR,,47.38604,28.8303082
+4394,Rezina District,144,MD,Moldova,RE,,47.7180447,28.8871024
+4376,Rîșcani District,144,MD,Moldova,RI,,47.9070153,27.5374996
+4364,Sîngerei District,144,MD,Moldova,SI,,47.6389134,28.1371816
+4388,Șoldănești District,144,MD,Moldova,SD,,47.8147389,28.7889586
+4374,Soroca District,144,MD,Moldova,SO,,48.1549743,28.2870783
+4378,Ștefan Vodă District,144,MD,Moldova,SV,,46.5540488,29.702242
+4377,Strășeni District,144,MD,Moldova,ST,,47.1450267,28.6136736
+4372,Taraclia District,144,MD,Moldova,TA,,45.898651,28.6671644
+4371,Telenești District,144,MD,Moldova,TE,,47.4983962,28.3676019
+4395,Transnistria autonomous territorial unit,144,MD,Moldova,SN,,47.2152972,29.4638054
+4386,Ungheni District,144,MD,Moldova,UN,,47.2305767,27.7892661
+3728,Belgrade,196,RS,Serbia,0,,44.786568,20.4489216
+3717,Bor District,196,RS,Serbia,14,,44.0698918,22.0985086
+3732,Braničevo District,196,RS,Serbia,11,,44.6982246,21.5446775
+3716,Central Banat District,196,RS,Serbia,2,,45.4788485,20.6082522
+3715,Jablanica District,196,RS,Serbia,23,,42.948156,21.8129321
+3724,Kolubara District,196,RS,Serbia,9,,44.3509811,20.0004305
+3719,Mačva District,196,RS,Serbia,8,,44.5925314,19.5082246
+3727,Moravica District,196,RS,Serbia,17,,43.84147,20.2904987
+3722,Nišava District,196,RS,Serbia,20,,43.3738902,21.9322331
+3714,North Bačka District,196,RS,Serbia,1,,45.9803394,19.5907001
+3736,North Banat District,196,RS,Serbia,3,,45.906839,19.9993417
+3721,Pčinja District,196,RS,Serbia,24,,42.5836362,22.1430215
+3712,Pirot District,196,RS,Serbia,22,,43.0874036,22.5983044
+3741,Podunavlje District,196,RS,Serbia,10,,44.4729156,20.9901426
+3737,Pomoravlje District,196,RS,Serbia,13,,43.9591379,21.271353
+3720,Rasina District,196,RS,Serbia,19,,43.5263525,21.1588178
+3725,Raška District,196,RS,Serbia,18,,43.3373461,20.5734005
+3711,South Bačka District,196,RS,Serbia,6,,45.4890344,19.6976187
+3713,South Banat District,196,RS,Serbia,4,,45.0027457,21.0542509
+3740,Srem District,196,RS,Serbia,7,,45.0029171,19.8013773
+3734,Šumadija District,196,RS,Serbia,12,,44.2050678,20.7856565
+3718,Toplica District,196,RS,Serbia,21,,43.1906592,21.3407762
+3733,Vojvodina,196,RS,Serbia,VO,,45.2608651,19.8319338
+3726,West Bačka District,196,RS,Serbia,5,,45.7355385,19.1897364
+3731,Zaječar District,196,RS,Serbia,15,,43.9015048,22.2738011
+3729,Zlatibor District,196,RS,Serbia,16,,43.645417,19.7101455
+1048,Bács-Kiskun,99,HU,Hungary,BK,county,46.5661437,19.4272464
+1055,Baranya,99,HU,Hungary,BA,county,46.0484585,18.2719173
+1060,Békés,99,HU,Hungary,BE,county,46.6704899,21.0434996
+1036,Békéscsaba,99,HU,Hungary,BC,city with county rights,46.6735939,21.0877309
+1058,Borsod-Abaúj-Zemplén,99,HU,Hungary,BZ,county,48.2939401,20.6934112
+1064,Budapest,99,HU,Hungary,BU,capital city,47.497912,19.040235
+1031,Csongrád County,99,HU,Hungary,CS,county,46.416705,20.2566161
+1032,Debrecen,99,HU,Hungary,DE,city with county rights,47.5316049,21.6273124
+1049,Dunaújváros,99,HU,Hungary,DU,city with county rights,46.9619059,18.9355227
+1037,Eger,99,HU,Hungary,EG,city with county rights,47.9025348,20.3772284
+1028,Érd,99,HU,Hungary,ER,city with county rights,47.3919718,18.904544
+1044,Fejér County,99,HU,Hungary,FE,county,47.1217932,18.5294815
+1041,Győr,99,HU,Hungary,GY,city with county rights,47.6874569,17.6503974
+1042,Győr-Moson-Sopron County,99,HU,Hungary,GS,county,47.6509285,17.2505883
+1063,Hajdú-Bihar County,99,HU,Hungary,HB,county,47.4688355,21.5453227
+1040,Heves County,99,HU,Hungary,HE,county,47.8057617,20.2038559
+1027,Hódmezővásárhely,99,HU,Hungary,HV,city with county rights,46.4181262,20.3300315
+1043,Jász-Nagykun-Szolnok County,99,HU,Hungary,JN,county,47.2555579,20.5232456
+1067,Kaposvár,99,HU,Hungary,KV,city with county rights,46.3593606,17.7967639
+1056,Kecskemét,99,HU,Hungary,KM,city with county rights,46.8963711,19.6896861
+5085,Komárom-Esztergom,99,HU,Hungary,KE,county,47.5779786,18.1256855
+1065,Miskolc,99,HU,Hungary,MI,city with county rights,48.1034775,20.7784384
+1030,Nagykanizsa,99,HU,Hungary,NK,city with county rights,46.4590218,16.9896796
+1051,Nógrád County,99,HU,Hungary,NO,county,47.9041031,19.0498504
+1034,Nyíregyháza,99,HU,Hungary,NY,city with county rights,47.9495324,21.7244053
+1053,Pécs,99,HU,Hungary,PS,city with county rights,46.0727345,18.232266
+1059,Pest County,99,HU,Hungary,PE,county,47.4480001,19.4618128
+1068,Salgótarján,99,HU,Hungary,ST,city with county rights,48.0935237,19.7999813
+1035,Somogy County,99,HU,Hungary,SO,county,46.554859,17.5866732
+1057,Sopron,99,HU,Hungary,SN,city with county rights,47.6816619,16.5844795
+1045,Szabolcs-Szatmár-Bereg County,99,HU,Hungary,SZ,county,48.0394954,22.00333
+1029,Szeged,99,HU,Hungary,SD,city with county rights,46.2530102,20.1414253
+1033,Székesfehérvár,99,HU,Hungary,SF,city with county rights,47.1860262,18.4221358
+1061,Szekszárd,99,HU,Hungary,SS,city with county rights,46.3474326,18.7062293
+1047,Szolnok,99,HU,Hungary,SK,city with county rights,47.1621355,20.1824712
+1052,Szombathely,99,HU,Hungary,SH,city with county rights,47.2306851,16.6218441
+1066,Tatabánya,99,HU,Hungary,TB,city with county rights,47.569246,18.404818
+1038,Tolna County,99,HU,Hungary,TO,county,46.4762754,18.5570627
+1039,Vas County,99,HU,Hungary,VA,county,47.0929111,16.6812183
+1062,Veszprém,99,HU,Hungary,VM,city with county rights,47.1028087,17.9093019
+1054,Veszprém County,99,HU,Hungary,VE,county,47.0930974,17.9100763
+1046,Zala County,99,HU,Hungary,ZA,county,46.7384404,16.9152252
+1050,Zalaegerszeg,99,HU,Hungary,ZE,county,46.8416936,16.8416322
